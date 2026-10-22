@@ -1,0 +1,16 @@
+{
+ "updated": "2026-10-21T14:00:00Z",
+ "source": "seeded from published Dubai 24K retail rates (Jul–Oct 2026); appended daily by scripts/update_prices.py",
+ "fx": {"AED": 3.6725, "INR": 88.0, "PKR": 281.0, "NPR": 140.5, "LKR": 303.0, "BDT": 122.0, "PHP": 58.5, "EGP": 48.5, "SAR": 3.75, "EUR": 0.89, "GBP": 0.747},
+ "days": [
+  {"date": "2026-07-08", "usd_oz": 4213.45, "aed_g_24k": 497.0},
+  {"date": "2026-07-10", "usd_oz": 4215.57, "aed_g_24k": 497.25},
+  {"date": "2026-07-13", "usd_oz": 4143.51, "aed_g_24k": 488.75},
+  {"date": "2026-07-14", "usd_oz": 4088.4, "aed_g_24k": 482.25},
+  {"date": "2026-07-28", "usd_oz": 4132.91, "aed_g_24k": 487.5},
+  {"date": "2026-07-29", "usd_oz": 4111.72, "aed_g_24k": 485.0},
+  {"date": "2026-07-30", "usd_oz": 4166.82, "aed_g_24k": 491.5},
+  {"date": "2026-07-31", "usd_oz": 4171.06, "aed_g_24k": 492.0},
+  {"date": "2026-10-21", "usd_oz": 4140.71, "aed_g_24k": 488.42}
+ ]
+}
