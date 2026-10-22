@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Gold Tools UAE: Calculator, Price Chart &amp; Rate History</title>
+<meta name="description" content="Free gold tools for the UAE: a gold calculator in AED for any weight and karat, a live gold price chart for Dubai and a rate history for context.">
+<link rel="canonical" href="https://gold-uae.github.io/tools/">
+<link rel="alternate" hreflang="en" href="https://gold-uae.github.io/tools/">
+<link rel="alternate" hreflang="ar" href="https://gold-uae.github.io/ar/tools/">
+<link rel="alternate" hreflang="x-default" href="https://gold-uae.github.io/tools/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="KaratUAE">
+<meta property="og:locale" content="en_AE">
+<meta property="og:title" content="Gold Tools UAE: Calculator, Price Chart &amp; Rate History">
+<meta property="og:description" content="Free gold tools for the UAE: a gold calculator in AED for any weight and karat, a live gold price chart for Dubai and a rate history for context.">
+<meta property="og:url" content="https://gold-uae.github.io/tools/">
+<meta property="og:image" content="https://gold-uae.github.io/static/og/tools-en.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0E1326">
+<link rel="icon" href="/static/art/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/static/art/icon-512.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://api.gold-api.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Manrope:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="/static/css/karat.css?v=202610211715">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://gold-uae.github.io/#org", "name": "KaratUAE", "url": "https://gold-uae.github.io/", "logo": "https://gold-uae.github.io/static/art/icon-512.png"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://gold-uae.github.io/"}, {"@type": "ListItem", "position": 2, "name": "Tools", "item": "https://gold-uae.github.io/tools/"}]}, {"@type": "Article", "headline": "Gold Tools for the UAE: Calculator, Price Chart and Rate History", "description": "Free gold tools for the UAE: a gold calculator in AED for any weight and karat, a live gold price chart for Dubai and a rate history for context.", "inLanguage": "en", "mainEntityOfPage": "https://gold-uae.github.io/tools/", "dateModified": "2026-10-21", "author": {"@id": "https://gold-uae.github.io/#org"}, "publisher": {"@id": "https://gold-uae.github.io/#org"}, "image": "https://gold-uae.github.io/static/art/tools.svg"}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is the gold calculator free and does it need an account?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, every tool on KaratUAE is free and runs in your browser without an account or sign-in. The calculator, chart and history fetch the live spot price and exchange rates when the page loads, do the arithmetic locally, and store nothing about you. You can use them on a phone inside a shop as easily as on a desktop at home."}}, {"@type": "Question", "name": "Why does the calculator show a different figure from the shop board?", "acceptedAnswer": {"@type": "Answer", "text": "The calculator uses the live spot price at the moment you load the page. A shop board is updated a few times a day and rounded to whole dirhams, so it can be a little above or below the live figure. A gap of a dirham or two per gram is timing and rounding. A gap much larger than that is worth questioning before you buy."}}, {"@type": "Question", "name": "Is there a separate gold price chart for Dubai?", "acceptedAnswer": {"@type": "Answer", "text": "Not really, and you do not need one. The Dubai rate is the international spot price converted into dirhams at the fixed peg, then split by karat. The live chart on this site shows the dollar spot price and the AED-per-gram equivalent side by side, which is effectively the Dubai chart. The retail board follows it with a short delay."}}, {"@type": "Question", "name": "Can the tools show the gold rate for the last six months in the UAE?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The price history page has ranges for one month, six months, one year and longer, in AED per gram for 24K, 22K, 21K and 18K as well as USD per ounce. Because the dirham is pegged to the dollar, the UAE history mirrors the global one exactly, with no currency distortion."}}, {"@type": "Question", "name": "Which tool should I use before selling old jewellery?", "acceptedAnswer": {"@type": "Answer", "text": "Start with the calculator: enter the weight and karat from the hallmark and you get the metal value, which is the reference a buyer will quote against. Then check the live chart to see whether the day is moving. Finally, read the selling guide so you know what deduction below the board rate is normal for scrap and what is too much."}}]}]}</script>
+</head>
+<body class="lang-en is-article">
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="ticker" aria-hidden="true">
+  <div class="ticker__track">
+    <span class="ticker__item"><b>24K</b> <span class="num" data-gp="24:g:AED">…</span> AED/g</span>
+    <span class="ticker__item"><b>22K</b> <span class="num" data-gp="22:g:AED">…</span> AED/g</span>
+    <span class="ticker__item"><b>21K</b> <span class="num" data-gp="21:g:AED">…</span> AED/g</span>
+    <span class="ticker__item"><b>18K</b> <span class="num" data-gp="18:g:AED">…</span> AED/g</span>
+    <span class="ticker__item"><b>XAU</b> $<span class="num" data-gp="spot:oz:USD">…</span>/oz</span>
+    <span class="ticker__item"><b>1 tola 22K</b> <span class="num" data-gp="22:tola:AED">…</span> AED</span>
+    <span class="ticker__item"><b>24K</b> ₹<span class="num" data-gp="24:g:INR">…</span>/g</span>
+    <span class="ticker__item"><b>24K</b> <span class="num" data-gp="24:g:AED">…</span> AED/g</span>
+    <span class="ticker__item"><b>22K</b> <span class="num" data-gp="22:g:AED">…</span> AED/g</span>
+    <span class="ticker__item"><b>21K</b> <span class="num" data-gp="21:g:AED">…</span> AED/g</span>
+    <span class="ticker__item"><b>18K</b> <span class="num" data-gp="18:g:AED">…</span> AED/g</span>
+    <span class="ticker__item"><b>XAU</b> $<span class="num" data-gp="spot:oz:USD">…</span>/oz</span>
+    <span class="ticker__item"><b>1 tola 22K</b> <span class="num" data-gp="22:tola:AED">…</span> AED</span>
+    <span class="ticker__item"><b>24K</b> ₹<span class="num" data-gp="24:g:INR">…</span>/g</span>
+  </div>
+</div>
+
+<header class="top">
+  <div class="wrap top__row">
+    <a class="brand" href="/" aria-label="KaratUAE">
+      <svg class="brand__mark" viewBox="0 0 48 48" width="36" height="36" aria-hidden="true"><defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F6DF8E"/><stop offset="1" stop-color="#B98A1E"/></linearGradient></defs><path d="M24 3 42 14v20L24 45 6 34V14z" fill="url(#bg)"/><path d="M24 3v42M6 14l18 10 18-10M6 34l18-10 18 10" fill="none" stroke="#0E1326" stroke-opacity=".35" stroke-width="1.5"/></svg>
+      <span class="brand__name">KaratUAE</span>
+    </a>
+    <nav class="nav" aria-label="Sections">
+<a href="/rates/">Rates by emirate</a><a href="/karat/">Karats &amp; purity</a><a href="/tools/" aria-current="true">Tools</a><a href="/buying/">Buying gold</a><a href="/selling/">Selling &amp; loans</a><a href="/souks/">Gold souks</a><a href="/jewellery/">Jewellery</a><a href="/investing/">Investing</a>    </nav>
+    <div class="top__tools">
+      <button class="top__search" type="button" data-search-open aria-label="Search">
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="M16.5 16.5 21 21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <span>Search</span><kbd>/</kbd>
+      </button>
+      <a class="top__lang" href="/ar/tools/" hreflang="ar" lang="ar">العربية</a>
+      <button class="top__menu" type="button" data-menu-open aria-label="Menu" aria-expanded="false" aria-controls="drawer">
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero">
+  <div class="wrap hero__grid">
+    <div class="hero__text">
+      <nav class="crumbs" aria-label="Breadcrumb">
+        <a href="/">Home</a>
+        <span>/</span><span aria-current="page">Tools</span>
+      </nav>
+      <h1>Gold Tools for the UAE: Calculator, Price Chart and Rate History</h1>
+      <div class="hero__lead"><p>Most questions about gold in the UAE come down to three things: what a specific weight is worth right now, which way the price is moving, and whether today is expensive or cheap compared with the recent past. The tools in this section answer each one with live data, in dirhams, for the karats actually sold in Dubai, Sharjah and Abu Dhabi.</p><p>Below you will find the calculator ready to use, then a short guide to picking the right tool for your situation, and notes on how each one works so you can trust what it tells you.</p></div>
+    </div>
+<figure class="hero__art"><img src="/static/art/tools.svg" width="520" height="400" alt="A digital scale, a line chart and a calculator arranged on a jeweller&#39;s counter" fetchpriority="high"></figure>  </div>
+</section>
+
+<section class="quick">
+  <div class="wrap">
+    <div class="quick__box">
+      <p class="quick__h">Quick answer</p>
+      <ul><li>Three tools live here: a gold calculator in AED, a live gold price chart and a rate history view.</li><li>Use the calculator before any shop visit to know the metal value of a piece by weight and karat.</li><li>Use the live chart when you are timing a purchase or sale within the day or week.</li><li>Use the price history when you want context: where today&#39;s rate sits against the last months and years.</li><li>Everything runs in your browser on the live spot price; nothing needs an account.</li></ul>
+    </div>
+  </div>
+</section>
+
+<section class="tools-row">
+  <div class="wrap">
+<section class="calc" data-calc aria-label="What will it cost?">
+  <h2 class="calc__title">What will it cost?</h2>
+  <div class="calc__form">
+    <label><span>Weight</span><input type="number" inputmode="decimal" min="0" step="any" value="10" data-calc-weight></label>
+    <label><span>Unit</span>
+      <select data-calc-unit><option value="g">1 gram</option><option value="tola">1 tola</option><option value="oz">1 ounce</option><option value="kg">1 kilo</option></select></label>
+    <label><span>Karat</span>
+      <select data-calc-karat><option value="24">24K</option><option value="22" selected>22K</option><option value="21">21K</option><option value="18">18K</option></select></label>
+    <label><span>Currency</span>
+      <select data-calc-cur><option value="AED">AED</option><option value="USD">USD</option><option value="INR">INR</option><option value="PKR">PKR</option><option value="NPR">NPR</option><option value="LKR">LKR</option><option value="BDT">BDT</option><option value="PHP">PHP</option><option value="EGP">EGP</option><option value="SAR">SAR</option><option value="EUR">EUR</option><option value="GBP">GBP</option></select></label>
+  </div>
+  <output class="calc__out"><span class="calc__label">Metal value</span><span class="calc__value"><span class="num" data-calc-out>…</span> <span data-calc-cur-label>AED</span></span></output>
+  <p class="calc__note">Metal only — jewellery adds making charges and VAT; bars add a small premium.</p>
+</section>
+
+  </div>
+</section>
+
+<section class="hub">
+  <div class="wrap">
+    <div class="hub__grid">
+      <a class="hubcard" href="/tools/calculator/">
+        <img src="/static/art/scale.svg" width="120" height="92" alt="" loading="lazy">
+        <span class="hubcard__t">Gold calculator</span>
+        <span class="hubcard__d">Gold calculator for the UAE: enter any weight in grams, tolas or ounces and any karat to get the live gold price in AED, from 1 gram to 1 kg, 22K and 21K.</span>
+      </a>
+      <a class="hubcard" href="/tools/price-history/">
+        <img src="/static/art/history.svg" width="120" height="92" alt="" loading="lazy">
+        <span class="hubcard__t">Price history</span>
+        <span class="hubcard__d">Gold price history for the UAE and Dubai: an interactive chart of the gold rate over the last month, six months, year and ten years in AED per gram.</span>
+      </a>
+      <a class="hubcard" href="/tools/live-chart/">
+        <img src="/static/art/chart.svg" width="120" height="92" alt="" loading="lazy">
+        <span class="hubcard__t">Live chart</span>
+        <span class="hubcard__d">Live gold chart with the spot price in USD per ounce and AED per gram. Read the 24-hour and 3-day gold price graph, trading sessions and today&#39;s trend.</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<div class="wrap reading">
+  <aside class="rail">
+    <div class="rail__sticky">
+      <nav class="toc" aria-label="In this guide">
+        <p class="toc__h">In this guide</p>
+        <ol><li><a href="#s1">Start here: the gold calculator for the UAE</a></li><li><a href="#s2">Which tool do you need? A quick decision path</a></li><li><a href="#s3">Gold price chart Dubai: the live view</a></li><li><a href="#s4">Gold rate history for the UAE: the long view</a></li><li><a href="#s5">How the tools get their numbers</a></li><li><a href="#s6">Worked example: from chart to calculator to shop</a></li><li><a href="#s7">Limits of what the tools can tell you</a></li><li><a href="#faq">Questions people ask</a></li></ol>
+      </nav>
+      <div class="rail__rate">
+        <p class="rail__h">Gold rate in Dubai today</p>
+<div class="rail__row"><span>24K</span><b><span class="num" data-gp="24:g:AED">…</span> AED</b></div><div class="rail__row"><span>22K</span><b><span class="num" data-gp="22:g:AED">…</span> AED</b></div><div class="rail__row"><span>21K</span><b><span class="num" data-gp="21:g:AED">…</span> AED</b></div><div class="rail__row"><span>18K</span><b><span class="num" data-gp="18:g:AED">…</span> AED</b></div>        <div class="live" data-live-wrap>
+  <span class="live__dot" data-live-dot aria-hidden="true"></span>
+  <span class="live__text" data-live-text>Live</span>
+</div>
+
+      </div>
+    </div>
+  </aside>
+  <article class="article">
+    <section class="article__s" id="s1">
+      <h2>Start here: the gold calculator for the UAE</h2>
+      <p>If you only ever use one tool on this site, make it this one. Enter a weight in grams, tolas or ounces, choose the karat, and the <a href="/tools/calculator/">gold calculator</a> returns the metal value in AED at the current rate. It is the fastest way to sanity-check a price tag in the souk or to work out how many grams a fixed budget buys.</p><p><section class="calc" data-calc aria-label="What will it cost?">
+  <h2 class="calc__title">What will it cost?</h2>
+  <div class="calc__form">
+    <label><span>Weight</span><input type="number" inputmode="decimal" min="0" step="any" value="10" data-calc-weight></label>
+    <label><span>Unit</span>
+      <select data-calc-unit><option value="g">1 gram</option><option value="tola">1 tola</option><option value="oz">1 ounce</option><option value="kg">1 kilo</option></select></label>
+    <label><span>Karat</span>
+      <select data-calc-karat><option value="24">24K</option><option value="22" selected>22K</option><option value="21">21K</option><option value="18">18K</option></select></label>
+    <label><span>Currency</span>
+      <select data-calc-cur><option value="AED">AED</option><option value="USD">USD</option><option value="INR">INR</option><option value="PKR">PKR</option><option value="NPR">NPR</option><option value="LKR">LKR</option><option value="BDT">BDT</option><option value="PHP">PHP</option><option value="EGP">EGP</option><option value="SAR">SAR</option><option value="EUR">EUR</option><option value="GBP">GBP</option></select></label>
+  </div>
+  <output class="calc__out"><span class="calc__label">Metal value</span><span class="calc__value"><span class="num" data-calc-out>…</span> <span data-calc-cur-label>AED</span></span></output>
+  <p class="calc__note">Metal only — jewellery adds making charges and VAT; bars add a small premium.</p>
+</section>
+
+</p><p>The number you get is the value of the gold alone. A retailer adds a making charge on top, and when you sell, a buyer deducts a small margin below the board rate. That is normal, and the calculator gives you the baseline from which both are measured. For the full logic, worked examples by weight and the common pitfalls with stone-set pieces, open the dedicated <a href="/tools/calculator/">calculator page</a>.</p>
+    </section>
+    <section class="article__s" id="s2">
+      <h2>Which tool do you need? A quick decision path</h2>
+      <p>Different questions need different tools. Find yourself in this list:</p><ul><li><strong>You are standing in a shop with a price tag in your hand.</strong> Use the <a href="/tools/calculator/">calculator</a>. Weight times karat rate gives you the metal value; anything above it is the making charge, which you can then judge against the <a href="/buying/making-charges/">making charges guide</a>.</li><li><strong>You plan to buy or sell this week and want to time it.</strong> Open the <a href="/tools/live-chart/">live gold chart</a>. It shows the intraday and multi-day movement of the spot price and the equivalent in AED, so you can see whether the rate is rising into the afternoon or easing back.</li><li><strong>You are deciding whether to buy now or wait a few months.</strong> The <a href="/tools/price-history/">price history</a> puts today's rate in context against the last six months, one year and longer. It will not predict anything, but it shows how unusual the current level is.</li><li><strong>You are comparing with your home country.</strong> Pair the calculator with the <a href="/rates/in-indian-rupees/">rupee page</a> or the <a href="/rates/in-pkr-npr-lkr/">PKR, NPR and LKR page</a>, which convert the Dubai rate into your currency and explain the customs rules.</li><li><strong>You just want today's number.</strong> Skip the tools entirely; the <a href="/rates/dubai/">Dubai rate page</a> shows the board for every karat.</li></ul>
+    </section>
+    <section class="article__s" id="s3">
+      <h2>Gold price chart Dubai: the live view</h2>
+      <p>The <a href="/tools/live-chart/">live gold chart</a> plots the international spot price in US dollars per troy ounce and, because the dirham is pegged at 3.6725 to the dollar, converts it directly into AED per gram for each karat. There is no separate Dubai chart to find: the Dubai retail rate follows the same spot price, with the Dubai Gold and Jewellery Group publishing the board figure during the day.</p><p>What the live view is good for:</p><ul><li>Seeing the move since the Asian, European and US sessions opened, which matters because the UAE afternoon overlaps with the busiest hours in London and New York.</li><li>Spotting a sharp intraday swing before you walk into a shop, so you know whether the board is about to be updated.</li><li>Checking the weekend level. The market is closed from Friday evening to Sunday evening New York time, so Saturday shoppers in Deira pay Friday's close.</li></ul><p>The chart page explains how to read candles and lines, which timeframe to pick for which decision, and why the Dubai board sometimes lags the chart by a few minutes.</p>
+    </section>
+    <section class="article__s" id="s4">
+      <h2>Gold rate history for the UAE: the long view</h2>
+      <p>The <a href="/tools/price-history/">price history tool</a> answers the question every buyer asks before a wedding or Eid purchase: is this a high? It shows the rate over the last month, six months, a year and ten years, in AED per gram and USD per ounce, so you can see trends rather than a single day's noise.</p><p>Because the AED-USD peg has not changed since 1997, the UAE history is simply the dollar history scaled by a constant. That makes the chart unusually clean: there are no currency swings to strip out, unlike the rupee or the Pakistani rupee, where the local gold price can rise even when the dollar price falls.</p><p>Use the history page together with the <a href="/investing/price-analysis/">price analysis</a> page, which discusses what has historically moved the price (real interest rates, the dollar, central-bank buying, geopolitics) without pretending to forecast it.</p>
+    </section>
+    <section class="article__s" id="s5">
+      <h2>How the tools get their numbers</h2>
+      <p>All three tools run in your browser and pull two live inputs: the gold spot price in dollars from a public price feed, and the current exchange rates from a public FX feed. From those, each page derives:</p><ol><li>The 24K rate per gram in AED: spot price divided by 31.1035 (grams in a troy ounce), multiplied by 3.6725.</li><li>Each lower karat as a fraction of 24K: 22K at 91.6%, 21K at 87.5%, 18K at 75%, 14K at 58.5%.</li><li>Tola and ounce conversions at 11.6638 g and 31.1035 g respectively.</li></ol><p>The Dubai retail board uses the same inputs and the same arithmetic, which is why the figures line up closely. Small differences of a dirham or so per gram come from the time the board was last updated and from rounding; they are not a sign that one source is wrong. If you want to understand the board itself, the <a href="/rates/who-sets-the-dubai-gold-rate/">who sets the Dubai gold rate</a> page explains the process.</p><aside class="tip">Shops round the board rate and update it a few times a day, not every tick. If the chart shows a move in the last half hour, expect the shop board to catch up shortly; a polite question to the salesperson usually gets the fresh rate.</aside>
+    </section>
+    <section class="article__s" id="s6">
+      <h2>Worked example: from chart to calculator to shop</h2>
+      <p>Suppose you have set aside part of a salary for a 21K bangle for Eid. A sensible sequence is:</p><ol><li>Open the <a href="/tools/price-history/">history</a> to see whether the rate is near a recent high or has eased. This frames expectations rather than deciding anything.</li><li>On the day, glance at the <a href="/tools/live-chart/">live chart</a> in the morning. If the price is drifting down through the European session, an afternoon visit may get a lower board.</li><li>In the shop, weigh the bangle, note the karat, and run the <a href="/tools/calculator/">calculator</a> on your phone. The difference between the tag and the metal value is the making charge; compare it with what the <a href="/jewellery/bangles-and-bracelets/">bangles page</a> says is typical for that style.</li><li>Ask for an itemised invoice showing weight, karat, rate and making charge separately.</li></ol><p>The same routine works for selling: the history tells you whether now is a reasonable time, the chart tells you about the day, and the calculator tells you the floor below which a buyer's offer is simply low.</p>
+    </section>
+    <section class="article__s" id="s7">
+      <h2>Limits of what the tools can tell you</h2>
+      <p>Honest tools come with honest limits. These pages show prices; they do not value a specific piece of jewellery, because that depends on design, brand, condition and the stones, none of which a calculator can see. They do not forecast; a chart that goes up for a month says nothing certain about next month. And they use the spot price, so a retailer's board, a bank's buy-back price or a <a href="/selling/gold-loan-uae/">gold loan</a> valuation will each sit a little above or below the figure here.</p><p>Treat the numbers as a reference point for a conversation with a jeweller, not a substitute for one. With that in mind, they will save you from the two most common mistakes in the UAE gold trade: paying a making charge far above the metal value without realising it, and selling to the first buyer without knowing what the gold is worth.</p>
+    </section>
+    <section class="faq" id="faq">
+      <h2>Questions people ask</h2>
+      <details class="faq__item" open>
+        <summary>Is the gold calculator free and does it need an account?</summary>
+        <div class="faq__a"><p>Yes, every tool on KaratUAE is free and runs in your browser without an account or sign-in. The calculator, chart and history fetch the live spot price and exchange rates when the page loads, do the arithmetic locally, and store nothing about you. You can use them on a phone inside a shop as easily as on a desktop at home.</p></div>
+      </details>
+      <details class="faq__item">
+        <summary>Why does the calculator show a different figure from the shop board?</summary>
+        <div class="faq__a"><p>The calculator uses the live spot price at the moment you load the page. A shop board is updated a few times a day and rounded to whole dirhams, so it can be a little above or below the live figure. A gap of a dirham or two per gram is timing and rounding. A gap much larger than that is worth questioning before you buy.</p></div>
+      </details>
+      <details class="faq__item">
+        <summary>Is there a separate gold price chart for Dubai?</summary>
+        <div class="faq__a"><p>Not really, and you do not need one. The Dubai rate is the international spot price converted into dirhams at the fixed peg, then split by karat. The live chart on this site shows the dollar spot price and the AED-per-gram equivalent side by side, which is effectively the Dubai chart. The retail board follows it with a short delay.</p></div>
+      </details>
+      <details class="faq__item">
+        <summary>Can the tools show the gold rate for the last six months in the UAE?</summary>
+        <div class="faq__a"><p>Yes. The price history page has ranges for one month, six months, one year and longer, in AED per gram for 24K, 22K, 21K and 18K as well as USD per ounce. Because the dirham is pegged to the dollar, the UAE history mirrors the global one exactly, with no currency distortion.</p></div>
+      </details>
+      <details class="faq__item">
+        <summary>Which tool should I use before selling old jewellery?</summary>
+        <div class="faq__a"><p>Start with the calculator: enter the weight and karat from the hallmark and you get the metal value, which is the reference a buyer will quote against. Then check the live chart to see whether the day is moving. Finally, read the selling guide so you know what deduction below the board rate is normal for scrap and what is too much.</p></div>
+      </details>
+    </section>
+  </article>
+</div>
+
+<section class="next">
+  <div class="wrap">
+    <h2 class="next__h">Read next</h2>
+    <div class="next__scroll">
+      <a class="nextcard" href="/tools/calculator/">
+        <img src="/static/art/scale.svg" width="160" height="123" alt="" loading="lazy">
+        <span class="nextcard__s">Tools</span>
+        <span class="nextcard__t">Gold calculator</span>
+      </a>
+      <a class="nextcard" href="/tools/live-chart/">
+        <img src="/static/art/chart.svg" width="160" height="123" alt="" loading="lazy">
+        <span class="nextcard__s">Tools</span>
+        <span class="nextcard__t">Live chart</span>
+      </a>
+      <a class="nextcard" href="/tools/price-history/">
+        <img src="/static/art/history.svg" width="160" height="123" alt="" loading="lazy">
+        <span class="nextcard__s">Tools</span>
+        <span class="nextcard__t">Price history</span>
+      </a>
+      <a class="nextcard" href="/rates/dubai/">
+        <img src="/static/art/dubai.svg" width="160" height="123" alt="" loading="lazy">
+        <span class="nextcard__s">Rates by emirate</span>
+        <span class="nextcard__t">Dubai</span>
+      </a>
+      <a class="nextcard" href="/buying/making-charges/">
+        <img src="/static/art/craft.svg" width="160" height="123" alt="" loading="lazy">
+        <span class="nextcard__s">Buying gold</span>
+        <span class="nextcard__t">Making charges</span>
+      </a>
+      <a class="nextcard" href="/investing/price-analysis/">
+        <img src="/static/art/analysis.svg" width="160" height="123" alt="" loading="lazy">
+        <span class="nextcard__s">Investing</span>
+        <span class="nextcard__t">Price analysis</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="more">
+  <div class="wrap">
+    <p class="more__h">More in this section <a href="/tools/">Tools</a></p>
+    <div class="more__chips"><a class="chip" href="/tools/calculator/">Gold calculator</a><a class="chip" href="/tools/price-history/">Price history</a><a class="chip" href="/tools/live-chart/">Live chart</a></div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot__grid">
+      <div class="foot__about">
+        <p class="foot__brand">KaratUAE</p>
+        <p>KaratUAE converts the international spot price into dirhams every two minutes and explains gold in the Emirates — karats, souks, buying, selling and investing — in plain English and Arabic.</p>
+        <p class="foot__small">Rates are indicative and for information only; they are not financial advice. Shop prices differ.</p>
+      </div>
+      <div class="foot__col">
+        <p class="foot__h"><a href="/rates/">Rates by emirate</a></p>
+        <ul><li><a href="/rates/dubai/">Dubai</a></li><li><a href="/rates/abu-dhabi/">Abu Dhabi</a></li><li><a href="/rates/sharjah/">Sharjah</a></li><li><a href="/rates/ajman/">Ajman rate</a></li><li><a href="/rates/al-ain/">Al Ain rate</a></li><li><a href="/rates/fujairah/">Fujairah rate</a></li><li><a href="/rates/ras-al-khaimah/">RAK rate</a></li><li><a href="/rates/who-sets-the-dubai-gold-rate/">Who sets the rate</a></li><li><a href="/rates/spot-price-usd/">Spot price (USD)</a></li><li><a href="/rates/in-indian-rupees/">Rate in Indian rupees</a></li><li><a href="/rates/in-pkr-npr-lkr/">Rate in PKR, NPR, LKR</a></li></ul>
+      </div>
+      <div class="foot__col">
+        <p class="foot__h"><a href="/karat/">Karats &amp; purity</a></p>
+        <ul><li><a href="/karat/24k/">24K gold rate</a></li><li><a href="/karat/22k/">22K gold rate</a></li><li><a href="/karat/21k/">21K gold rate</a></li><li><a href="/karat/18k/">18K gold rate</a></li><li><a href="/karat/explained/">Karats explained</a></li><li><a href="/karat/white-rose-black-gold/">White, rose &amp; black gold</a></li><li><a href="/karat/hallmark-and-purity-test/">Hallmark &amp; purity test</a></li></ul>
+      </div>
+      <div class="foot__col">
+        <p class="foot__h"><a href="/tools/">Tools</a></p>
+        <ul><li><a href="/tools/calculator/">Gold calculator</a></li><li><a href="/tools/price-history/">Price history</a></li><li><a href="/tools/live-chart/">Live chart</a></li></ul>
+      </div>
+      <div class="foot__col">
+        <p class="foot__h"><a href="/buying/">Buying gold</a></p>
+        <ul><li><a href="/buying/how-to-buy-gold-in-dubai/">How to buy gold</a></li><li><a href="/buying/is-gold-cheaper-in-dubai/">Is gold cheaper?</a></li><li><a href="/buying/making-charges/">Making charges</a></li><li><a href="/buying/vat-and-tax-refund/">VAT &amp; tax refund</a></li><li><a href="/buying/gold-shops-near-me/">Gold shops near me</a></li><li><a href="/buying/best-jewellers-and-brands/">Jewellers &amp; brands</a></li><li><a href="/buying/wholesalers-and-factories/">Wholesalers &amp; factories</a></li><li><a href="/buying/taking-gold-from-dubai-to-india/">Gold to India</a></li></ul>
+      </div>
+      <div class="foot__col">
+        <p class="foot__h"><a href="/selling/">Selling &amp; loans</a></p>
+        <ul><li><a href="/selling/how-to-sell-gold-in-dubai/">Sell gold in Dubai</a></li><li><a href="/selling/gold-loan-uae/">Gold loan UAE</a></li></ul>
+      </div>
+      <div class="foot__col">
+        <p class="foot__h"><a href="/souks/">Gold souks</a></p>
+        <ul><li><a href="/souks/dubai-gold-souk/">Dubai Gold Souk</a></li><li><a href="/souks/getting-to-the-gold-souk/">Getting to the souk</a></li><li><a href="/souks/gold-and-diamond-park/">Gold &amp; Diamond Park</a></li><li><a href="/souks/gold-center-and-gold-land/">Gold Center &amp; Gold Land</a></li><li><a href="/souks/sharjah-gold-souk/">Sharjah Gold Souk</a></li><li><a href="/souks/ajman-gold-souk/">Ajman Gold Souk</a></li><li><a href="/souks/why-dubai-is-the-city-of-gold/">City of Gold</a></li></ul>
+      </div>
+      <div class="foot__col">
+        <p class="foot__h"><a href="/jewellery/">Jewellery</a></p>
+        <ul><li><a href="/jewellery/rings/">Gold rings</a></li><li><a href="/jewellery/chains/">Gold chains</a></li><li><a href="/jewellery/necklaces-and-sets/">Necklaces &amp; sets</a></li><li><a href="/jewellery/bangles-and-bracelets/">Bangles &amp; bracelets</a></li><li><a href="/jewellery/earrings/">Earrings</a></li></ul>
+      </div>
+      <div class="foot__col">
+        <p class="foot__h"><a href="/investing/">Investing</a></p>
+        <ul><li><a href="/investing/gold-bars/">Gold bars</a></li><li><a href="/investing/gold-coins/">Gold coins</a></li><li><a href="/investing/trading-online/">Trading online</a></li><li><a href="/investing/stocks-and-etfs/">Stocks &amp; ETFs</a></li><li><a href="/investing/price-analysis/">Price analysis</a></li></ul>
+      </div>
+    </div>
+    <div class="foot__base">
+      <span>© 2026 KaratUAE. All rights reserved.</span>
+      <nav aria-label="Legal">
+        <a href="/about/">About</a>
+        <a href="/contact/">Contact</a>
+        <a href="/privacy-policy/">Privacy</a>
+        <a href="/disclaimer/">Disclaimer</a>
+        <a href="/sitemap.xml">Sitemap</a>
+        <a href="/ar/tools/" hreflang="ar">العربية</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<nav class="tabbar" aria-label="Menu">
+  <a href="/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11 12 4l9 7v9H3z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>Today</a>
+  <a href="/rates/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 18 10 10l4 4 6-8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Rates</a>
+  <a href="/tools/calculator/"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 7h8M8 12h3M13 12h3M8 16h3M13 16h3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Calculator</a>
+  <button type="button" data-search-open><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="M16.5 16.5 21 21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Search</button>
+  <button type="button" data-menu-open><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Menu</button>
+</nav>
+
+<div class="drawer" id="drawer" data-drawer hidden>
+  <div class="drawer__panel" role="dialog" aria-modal="true" aria-label="Menu">
+    <div class="drawer__head"><span class="brand__name">KaratUAE</span><button type="button" class="drawer__close" data-menu-close aria-label="Close">✕</button></div>
+    <a class="drawer__lang" href="/ar/tools/" hreflang="ar">العربية</a>
+    <details class="drawer__group">
+      <summary><a href="/rates/">Rates by emirate</a></summary>
+      <ul><li><a href="/rates/dubai/">Dubai</a></li><li><a href="/rates/abu-dhabi/">Abu Dhabi</a></li><li><a href="/rates/sharjah/">Sharjah</a></li><li><a href="/rates/ajman/">Ajman rate</a></li><li><a href="/rates/al-ain/">Al Ain rate</a></li><li><a href="/rates/fujairah/">Fujairah rate</a></li><li><a href="/rates/ras-al-khaimah/">RAK rate</a></li><li><a href="/rates/who-sets-the-dubai-gold-rate/">Who sets the rate</a></li><li><a href="/rates/spot-price-usd/">Spot price (USD)</a></li><li><a href="/rates/in-indian-rupees/">Rate in Indian rupees</a></li><li><a href="/rates/in-pkr-npr-lkr/">Rate in PKR, NPR, LKR</a></li></ul>
+    </details>
+    <details class="drawer__group">
+      <summary><a href="/karat/">Karats &amp; purity</a></summary>
+      <ul><li><a href="/karat/24k/">24K gold rate</a></li><li><a href="/karat/22k/">22K gold rate</a></li><li><a href="/karat/21k/">21K gold rate</a></li><li><a href="/karat/18k/">18K gold rate</a></li><li><a href="/karat/explained/">Karats explained</a></li><li><a href="/karat/white-rose-black-gold/">White, rose &amp; black gold</a></li><li><a href="/karat/hallmark-and-purity-test/">Hallmark &amp; purity test</a></li></ul>
+    </details>
+    <details class="drawer__group" open>
+      <summary><a href="/tools/">Tools</a></summary>
+      <ul><li><a href="/tools/calculator/">Gold calculator</a></li><li><a href="/tools/price-history/">Price history</a></li><li><a href="/tools/live-chart/">Live chart</a></li></ul>
+    </details>
+    <details class="drawer__group">
+      <summary><a href="/buying/">Buying gold</a></summary>
+      <ul><li><a href="/buying/how-to-buy-gold-in-dubai/">How to buy gold</a></li><li><a href="/buying/is-gold-cheaper-in-dubai/">Is gold cheaper?</a></li><li><a href="/buying/making-charges/">Making charges</a></li><li><a href="/buying/vat-and-tax-refund/">VAT &amp; tax refund</a></li><li><a href="/buying/gold-shops-near-me/">Gold shops near me</a></li><li><a href="/buying/best-jewellers-and-brands/">Jewellers &amp; brands</a></li><li><a href="/buying/wholesalers-and-factories/">Wholesalers &amp; factories</a></li><li><a href="/buying/taking-gold-from-dubai-to-india/">Gold to India</a></li></ul>
+    </details>
+    <details class="drawer__group">
+      <summary><a href="/selling/">Selling &amp; loans</a></summary>
+      <ul><li><a href="/selling/how-to-sell-gold-in-dubai/">Sell gold in Dubai</a></li><li><a href="/selling/gold-loan-uae/">Gold loan UAE</a></li></ul>
+    </details>
+    <details class="drawer__group">
+      <summary><a href="/souks/">Gold souks</a></summary>
+      <ul><li><a href="/souks/dubai-gold-souk/">Dubai Gold Souk</a></li><li><a href="/souks/getting-to-the-gold-souk/">Getting to the souk</a></li><li><a href="/souks/gold-and-diamond-park/">Gold &amp; Diamond Park</a></li><li><a href="/souks/gold-center-and-gold-land/">Gold Center &amp; Gold Land</a></li><li><a href="/souks/sharjah-gold-souk/">Sharjah Gold Souk</a></li><li><a href="/souks/ajman-gold-souk/">Ajman Gold Souk</a></li><li><a href="/souks/why-dubai-is-the-city-of-gold/">City of Gold</a></li></ul>
+    </details>
+    <details class="drawer__group">
+      <summary><a href="/jewellery/">Jewellery</a></summary>
+      <ul><li><a href="/jewellery/rings/">Gold rings</a></li><li><a href="/jewellery/chains/">Gold chains</a></li><li><a href="/jewellery/necklaces-and-sets/">Necklaces &amp; sets</a></li><li><a href="/jewellery/bangles-and-bracelets/">Bangles &amp; bracelets</a></li><li><a href="/jewellery/earrings/">Earrings</a></li></ul>
+    </details>
+    <details class="drawer__group">
+      <summary><a href="/investing/">Investing</a></summary>
+      <ul><li><a href="/investing/gold-bars/">Gold bars</a></li><li><a href="/investing/gold-coins/">Gold coins</a></li><li><a href="/investing/trading-online/">Trading online</a></li><li><a href="/investing/stocks-and-etfs/">Stocks &amp; ETFs</a></li><li><a href="/investing/price-analysis/">Price analysis</a></li></ul>
+    </details>
+    <div class="drawer__legal">
+      <a href="/about/">About</a><a href="/contact/">Contact</a><a href="/privacy-policy/">Privacy</a><a href="/disclaimer/">Disclaimer</a>
+    </div>
+  </div>
+</div>
+
+<div class="palette" data-search hidden>
+  <div class="palette__box" role="dialog" aria-modal="true" aria-label="Search KaratUAE">
+    <form class="palette__form" action="/search/" method="get" role="search">
+      <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="M16.5 16.5 21 21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <input name="q" type="search" placeholder="Search rates, souks, karats, guides…" autocomplete="off" data-search-input aria-label="Search">
+      <button type="button" class="palette__close" data-search-close aria-label="Close">Close</button>
+    </form>
+    <p class="palette__hint" data-search-hint>Type two letters or more. Try “22k”, “souk”, “calculator”.</p>
+    <ul class="palette__results" data-search-results></ul>
+  </div>
+</div>
+
+<script>window.KARAT={lang:"en",api:"https://api.gold-api.com/price/XAU",fx:"https://open.er-api.com/v6/latest/USD",usdAed:3.6725,oz:31.1034768,tola:11.6638,karats:{"18": 0.75, "21": 0.875, "22": 0.916, "24": 0.999},index:"/search-en.json",t:{live:"Live",stale:"Last saved rate",updated:"updated",dubai:"Dubai time",err:"The live feed is unreachable right now — showing the last saved rate.",none:"Nothing matches that yet. Try a shorter word.",results:"results"}};</script>
+<script src="/static/js/rates.js?v=202610211715" defer></script>
+<script src="/static/js/ui.js?v=202610211715" defer></script>
+</body>
+</html>
