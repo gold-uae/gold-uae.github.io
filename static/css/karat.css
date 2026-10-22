@@ -67,7 +67,8 @@ kbd{font:inherit;font-size:.75em;border:1px solid var(--night-line);border-radiu
 
 /* hero (dark band) -------------------------------------------------------- */
 .hero{background:radial-gradient(1200px 500px at 85% -10%,rgba(227,185,74,.22),transparent 60%),linear-gradient(180deg,var(--night) 0%,#111735 100%);color:var(--on-night);padding:2.5rem 0 3rem}
-.hero__grid{display:grid;gap:2rem;align-items:center}
+.hero__grid{display:grid;grid-template-columns:minmax(0,1fr);gap:2rem;align-items:center}
+.hero__text,.hero__board,.hero__art{min-width:0}
 .hero__text h1{color:#fff}
 .hero__lead{font-size:1.1rem;color:var(--on-night-2);max-width:62ch}
 .hero__lead a{color:var(--gold-hi)}
@@ -86,7 +87,7 @@ kbd{font:inherit;font-size:.75em;border:1px solid var(--night-line);border-radiu
 .btn--ghost{background:transparent;color:var(--on-night);border-color:var(--night-line)}
 .btn--ghost:hover{border-color:var(--gold);color:var(--gold-hi)}
 .hero--home{padding-bottom:0}
-.hero__home{display:grid;gap:2.5rem;padding-bottom:3rem}
+.hero__home{display:grid;grid-template-columns:minmax(0,1fr);gap:2.5rem;padding-bottom:3rem}
 @media (min-width:980px){.hero__home{grid-template-columns:1fr 1fr;align-items:center;gap:3rem}}
 
 /* live status ------------------------------------------------------------- */
@@ -106,16 +107,17 @@ kbd{font:inherit;font-size:.75em;border:1px solid var(--night-line);border-radiu
 [dir=rtl] .board__head .live{text-align:start}
 .board__title{font-size:1.15rem;margin:0;color:#fff}
 .board__sub{margin:.15rem 0 0;font-size:.82rem;color:var(--on-night-2)}
-.board__units{display:flex;gap:.3rem;background:rgba(0,0,0,.25);border-radius:999px;padding:.25rem;margin-bottom:.75rem;overflow-x:auto}
+.board__units{display:flex;gap:.3rem;background:rgba(0,0,0,.25);border-radius:999px;padding:.25rem;margin-bottom:.75rem;overflow-x:auto;min-width:0;scrollbar-width:none}
+.board__units::-webkit-scrollbar{display:none}
 .board__units button{flex:1;border:0;background:transparent;color:var(--on-night-2);border-radius:999px;padding:.45rem .6rem;font-size:.82rem;font-weight:600;cursor:pointer;white-space:nowrap}
 .board__units button.is-on{background:var(--gold);color:var(--night)}
 .board__rows{list-style:none;margin:0;padding:0}
-.board__row{display:grid;grid-template-columns:5.2rem 1fr 1fr;align-items:center;gap:.5rem;padding:.7rem 0;border-top:1px solid var(--night-line)}
+.board__row{display:grid;grid-template-columns:auto minmax(0,1fr) minmax(0,1fr);align-items:center;gap:.5rem;padding:.7rem 0;border-top:1px solid var(--night-line)}
 .board__row:first-child{border-top:0}
 .board__k b{display:block;font-family:var(--display);font-size:1.15rem;font-weight:800;color:var(--gold-hi)}
 .board__k small{color:var(--on-night-2);font-size:.72rem}
 .board__price{display:flex;flex-direction:column;align-items:flex-end}
-.board__price .num{font-size:1.45rem;font-weight:700;color:#fff;line-height:1.1}
+.board__price .num{font-size:clamp(1.1rem,.6rem + 2.4vw,1.45rem);font-weight:700;color:#fff;line-height:1.1;white-space:nowrap}
 .board__price--usd .num{color:var(--on-night-2);font-size:1.15rem}
 .board__cur{font-size:.68rem;color:var(--on-night-2);letter-spacing:.02em}
 .board__note{margin:.9rem 0 0;font-size:.78rem;color:var(--on-night-2)}
@@ -360,3 +362,28 @@ kbd{font:inherit;font-size:.75em;border:1px solid var(--night-line);border-radiu
 .searchpage__results li a{padding:.9rem 0}
 
 @media print{.ticker,.top,.tabbar,.foot,.next,.more,.rail,.drawer,.palette{display:none!important}.hero{background:none;color:#000}.hero__text h1{color:#000}}
+
+/* small phones ---------------------------------------------------------------------- */
+body{overflow-x:hidden}
+@media (max-width:480px){
+  .wrap{width:min(var(--wrap),100% - 1.5rem)}
+  .board{padding:1rem .9rem}
+  .board__head{flex-direction:column;gap:.4rem}
+  .board__head>div,.board__head .live{flex:0 0 auto;justify-content:flex-start;text-align:start}
+  .board__units button{flex:0 0 auto;padding:.4rem .7rem;font-size:.78rem}
+  .board__row{gap:.35rem;padding:.6rem 0}
+  .board__k b{font-size:1rem}
+  .board__price--usd .num{font-size:clamp(.95rem,.5rem + 2vw,1.15rem)}
+  .kcard{padding:1.1rem}
+  .kcard__big{font-size:clamp(2.2rem,1.4rem + 5vw,3rem)}
+  .calc,.chart,.bars,.fx{padding:1rem}
+  .calc__value{font-size:1.5rem}
+  .spot{padding:1.1rem}
+  h1{font-size:clamp(1.7rem,1.2rem + 3vw,2.2rem)}
+  .hero{padding:1.75rem 0 2.25rem}
+  .hero__art{display:none}
+  .ticker{font-size:.76rem}
+}
+.bars,.fx{min-width:0}
+.bars__table,.fx__table{display:block;overflow-x:auto;white-space:nowrap}
+.bars__table thead,.bars__table tbody,.bars__table tr,.fx__table thead,.fx__table tbody,.fx__table tr{display:table;width:100%;table-layout:fixed}
