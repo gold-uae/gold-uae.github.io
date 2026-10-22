@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /search/
+Disallow: /ar/search/
+Sitemap: https://gold-uae.github.io/sitemap.xml
