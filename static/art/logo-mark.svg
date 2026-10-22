@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 52" width="72" height="52" role="img" aria-label="Gold UAE"><defs>
+<linearGradient id="gTop" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFF1BC"/><stop offset="1" stop-color="#E9C45A"/></linearGradient>
+<linearGradient id="gFront" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E9C45A"/><stop offset="1" stop-color="#B98A1E"/></linearGradient>
+<linearGradient id="gSide" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#A87B14"/><stop offset="1" stop-color="#6E4F0C"/></linearGradient>
+</defs><g><polygon points="0.00,16.00 14.00,0.00 58.00,0.00 44.00,16.00" fill="url(#gTop)"/><polygon points="0.00,16.00 44.00,16.00 44.00,40.00 0.00,40.00" fill="url(#gFront)"/><polygon points="44.00,16.00 58.00,0.00 58.00,24.00 44.00,40.00" fill="url(#gSide)"/><rect x="7.00" y="25.00" width="30.00" height="4.50" rx="2.00" fill="#0E1326" fill-opacity=".28"/><rect x="7.00" y="23.00" width="30.00" height="2.00" rx="1.00" fill="#FFF1BC" fill-opacity=".55"/><polygon points="60.00,8.00 62.00,2.00 64.00,8.00 70.00,10.00 64.00,12.00 62.00,18.00 60.00,12.00 54.00,10.00" fill="#FFF1BC"/></g></svg>
